@@ -13,7 +13,7 @@ The directory structure should match the directory structure of this github proj
 ```
 data/Test/*.csv
 data/Train/*.csv
-/Users/davidvandepol/git/Coldchain/CATTLEytics_HackAThon_Shari_van_de_Pol.py
+CATTLEytics_HackAThon_Shari_van_de_Pol.py
 requirements.txt
 ```
 
