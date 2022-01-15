@@ -28,7 +28,7 @@ print ("")
 print ("----------------------------------------------------------------")
 ##############
 
-df = pd.read_csv('Test/COLDCHAIN_TAGDATA.csv')
+df = pd.read_csv('data/Test/COLDCHAIN_TAGDATA.csv')
 #print (df)
 df.reset_index(inplace=True)
 data_dict = df.to_dict('records')
@@ -36,7 +36,7 @@ data_dict = df.to_dict('records')
 df.to_sql('TagData', conn, if_exists='replace', index = False)
 
 ##############
-dfTrip = pd.read_csv('Test/COLDCHAIN_TRIPDATA.csv')
+dfTrip = pd.read_csv('data/Test/COLDCHAIN_TRIPDATA.csv')
 #print (dfTrip)
 dfTrip.reset_index(inplace=True)
 data_dict = dfTrip.to_dict('records')
@@ -47,7 +47,7 @@ dfTrip.to_sql('TripData', conn, if_exists='replace', index = False)
 ##############
 #  Can be commented out if you want to compare with arrival checks
 try:
-    df = pd.read_csv('Test/COLDCHAIN_ARRIVAL_CHECKS.csv')
+    df = pd.read_csv('data/Test/COLDCHAIN_ARRIVAL_CHECKS.csv')
     #print (df)
     df.reset_index(inplace=True)
     data_dict = df.to_dict('records')
